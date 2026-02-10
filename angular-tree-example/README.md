@@ -13,17 +13,42 @@ PrimeNG's Tree component is a powerful UI element for displaying hierarchical da
 
 ## Features Demonstrated
 
-### 1. Organization Structure Tree
+### Basic Examples (TreeDemoComponent)
+
+#### 1. Organization Structure Tree
 - Single selection mode
 - Hierarchical organization chart
 - Node selection event handling
 - Display selected node information
 
-### 2. Project Tasks Tree
+#### 2. Project Tasks Tree
 - Checkbox selection mode
 - Multi-level task hierarchy
 - Multiple node selection
 - Track selected tasks count
+
+### Advanced Examples (AdvancedTreeComponent)
+
+#### 3. Loading Data from Service
+- Asynchronous data loading
+- Simulated API calls
+- Loading state management
+- Observable-based data binding
+
+#### 4. File System with Custom Icons
+- Custom icon binding per node
+- File and folder representation
+- Icon-based visual hierarchy
+
+#### 5. Lazy Loading
+- Dynamic child node loading
+- On-demand data fetching
+- Performance optimization for large datasets
+
+#### 6. Flat Data Transformation
+- Converting flat data structures to hierarchical trees
+- Parent-child relationship mapping
+- Dynamic tree generation from database-like structures
 
 ## Key Concepts
 
@@ -81,9 +106,9 @@ interface TreeNode {
 
 ## Component Structure
 
-### TreeDemoComponent
+### TreeDemoComponent (Basic Examples)
 
-The main component (`tree-demo.component.ts`) includes:
+The basic demo component (`tree-demo.component.ts`) includes:
 
 1. **Data Properties**:
    - `organizationData`: TreeNode[] - Organization hierarchy
@@ -97,6 +122,33 @@ The main component (`tree-demo.component.ts`) includes:
 
 3. **Event Handlers**:
    - `onNodeSelect(event)`: Handles node selection
+
+### AdvancedTreeComponent (Advanced Examples)
+
+The advanced demo component (`advanced-tree.component.ts`) demonstrates:
+
+1. **Service Integration**:
+   - Uses `TreeDataService` for data loading
+   - Observable-based asynchronous operations
+   - Error handling
+
+2. **Advanced Features**:
+   - `loadOrganizationData()`: Loads data from service with loading state
+   - `loadFileSystemData()`: Loads file system structure with icons
+   - `onNodeExpand()`: Implements lazy loading of child nodes
+   - `loadFlatData()`: Transforms flat data to hierarchical structure
+
+### TreeDataService
+
+The service (`tree-data.service.ts`) provides:
+
+1. **Data Loading Methods**:
+   - `getOrganizationData()`: Returns organization hierarchy
+   - `getFileSystemData()`: Returns file system structure
+   - `loadChildNodes()`: Simulates lazy loading
+
+2. **Utility Methods**:
+   - `transformFlatToTree()`: Converts flat array to TreeNode hierarchy
 
 ## Installation & Setup
 
@@ -133,15 +185,17 @@ Navigate to `http://localhost:4200`
 angular-tree-example/
 ├── src/
 │   ├── app/
-│   │   ├── app.component.ts          # Root component
-│   │   └── tree-demo.component.ts    # Tree demo component
-│   ├── index.html                     # HTML entry point
-│   ├── main.ts                        # Application bootstrap
-│   └── styles.css                     # Global styles
-├── angular.json                       # Angular configuration
-├── package.json                       # Dependencies
-├── tsconfig.json                      # TypeScript configuration
-└── README.md                          # This file
+│   │   ├── app.component.ts              # Root component
+│   │   ├── tree-demo.component.ts        # Basic tree examples
+│   │   ├── advanced-tree.component.ts    # Advanced tree examples
+│   │   └── tree-data.service.ts          # Data service for API simulation
+│   ├── index.html                        # HTML entry point
+│   ├── main.ts                           # Application bootstrap
+│   └── styles.css                        # Global styles
+├── angular.json                          # Angular configuration
+├── package.json                          # Dependencies
+├── tsconfig.json                         # TypeScript configuration
+└── README.md                             # This file
 ```
 
 ## Data Binding Patterns
