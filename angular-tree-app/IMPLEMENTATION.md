@@ -23,11 +23,11 @@ The application displays a file system tree with:
 
 ## Technologies Used
 
-- Angular 19.1.x
-- PrimeNG 18.x
-- PrimeIcons
-- @primeuix/themes (Aura theme)
-- TypeScript
+- Angular 21.1.x
+- PrimeNG 21.1.x
+- PrimeIcons 7.0.x
+- @primeuix/themes 2.0.x (Aura theme)
+- TypeScript 5.9.x
 
 ## Installation
 
