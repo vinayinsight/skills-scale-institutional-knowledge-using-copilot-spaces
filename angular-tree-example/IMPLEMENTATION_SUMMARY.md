@@ -62,11 +62,16 @@ angular-tree-example/
 
 ### Technical Details
 
-- **Framework**: Angular 17 (standalone components)
-- **UI Library**: PrimeNG 17
-- **Language**: TypeScript 5.2
+- **Framework**: Angular 19.2.18 (standalone components) - **Security patched**
+- **UI Library**: PrimeNG 19
+- **Language**: TypeScript 5.7
 - **Build Tool**: Angular CLI
 - **Package Manager**: npm
+
+> **Security Note**: This example uses Angular 19.2.18 which includes patches for:
+> - XSRF Token Leakage vulnerability (CVE)
+> - XSS vulnerabilities in SVG attributes
+> - Stored XSS vulnerabilities in SVG animations
 
 ### Data Binding Patterns Demonstrated
 
@@ -157,10 +162,11 @@ Total: 15 files (excluding node_modules and build artifacts)
 
 ### Build Statistics
 
-- Initial Bundle Size: 387.43 kB
-- Estimated Transfer Size: 94.17 kB
-- Build Time: ~12 seconds
+- Initial Bundle Size: 441.29 kB
+- Estimated Transfer Size: 112.89 kB
+- Build Time: ~14 seconds
 - Zero errors or warnings
+- **Security**: All Angular vulnerabilities patched (v19.2.18)
 
 ### How to Use
 

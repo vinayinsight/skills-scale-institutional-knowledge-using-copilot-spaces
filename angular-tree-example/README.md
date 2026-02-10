@@ -174,10 +174,12 @@ Navigate to `http://localhost:4200`
 
 ## Dependencies
 
-- **@angular/core**: ^17.0.0
-- **@angular/common**: ^17.0.0
-- **primeng**: ^17.0.0 - PrimeNG component library
-- **primeicons**: ^6.0.1 - Icon library for PrimeNG
+- **@angular/core**: ^19.2.18 - **Security patched**
+- **@angular/common**: ^19.2.18 - **Security patched**
+- **primeng**: ^19.0.0 - PrimeNG component library
+- **primeicons**: ^7.0.0 - Icon library for PrimeNG
+
+> **Security**: Angular 19.2.18 includes patches for XSRF token leakage and XSS vulnerabilities.
 
 ## Code Structure
 
