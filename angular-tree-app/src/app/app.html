@@ -1,0 +1,15 @@
+<div class="container">
+  <header>
+    <h1>{{ title }}</h1>
+    <p>Displaying hierarchical data using Angular PrimeNG Tree component</p>
+  </header>
+  
+  <main>
+    <div class="card">
+      <h2>File System Tree</h2>
+      <p-tree [value]="files" class="w-full"></p-tree>
+    </div>
+  </main>
+
+  <router-outlet />
+</div>

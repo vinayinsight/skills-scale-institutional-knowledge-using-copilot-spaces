@@ -35,3 +35,10 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Angular #
+###########
+node_modules/
+dist/
+.angular/
+.vscode/
